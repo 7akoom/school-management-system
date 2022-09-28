@@ -164,7 +164,7 @@
         $('#marks-entry').removeClass('d-none');
         var html = '';
         $.each( data, function(key, v){
-          html +=
+				html +=
           '<tr>'+
           '<td>'+v.student.id_no+'<input type="hidden" name="student_id[]" value="'+v.student_id+'"> <input type="hidden" name="id_no[]" value="'+v.student.id_no+'"> </td>'+
           '<td>'+v.student.name+'</td>'+
@@ -172,6 +172,8 @@
           '<td>'+v.student.gender+'</td>'+
           '<td><input type="text" class="form-control form-control-sm" name="marks[]" ></td>'+
           '</tr>';
+
+         
         });
         html = $('#marks-entry-tr').html(html);
       }

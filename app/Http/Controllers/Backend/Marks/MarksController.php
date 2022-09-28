@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend\Marks;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\AssignStudent;
+use App\Models\AssignSubject;
 use App\Models\User;
 use App\Models\DiscountStudent;
 
@@ -113,7 +114,7 @@ class MarksController extends Controller
 
 
     } // end marks
-
+	
 
 
 
